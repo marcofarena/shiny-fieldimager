@@ -17,10 +17,11 @@ To run a temporary container with Shiny Server:
 docker run --rm -p 3838:3838 marcofarena/fieldimager
 ```
 
-
+To deploy apps stored in the host system:
 
 ```sh
-docker run --rm -p 3838:3838 rocker/shiny:3.4.4
+sudo docker run -d -p 3838:3838 -v /srv/shinyapps/:/srv/shiny-server/ marcoarena/fieldima
+ger
 ```
 
 ### Developer Notes

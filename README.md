@@ -3,7 +3,7 @@ Docker for Shiny Server
 
 ![](https://img.shields.io/docker/build/rocker/shiny.svg) ![](https://img.shields.io/docker/build/rocker/shiny-verse.svg)
 
-This is a Dockerfile for Shiny Server on Debian stable.  Dockerfiles building on specific versions of R are now available as tags.  These images are based on the corresponding [r-ver](https://hub.docker.com/r/rocker/r-ver) image.  You can request a specific R version using the appropriate tag, e.g. `rocker/shiny:3.3.2`.    
+This is a Dockerfile for Shiny Server on Debian stable.  Dockerfiles building on specific versions of R are now available as tags.  These images are based on the corresponding [r-ver](https://hub.docker.com/r/rocker/r-ver) image. 
 
 ***For documentation for R >= 4.0.0, for images `r-ver`, `rstudio`, `tidyverse`, `verse`, `geospatial`, `shiny`, and `binder`, please see the [`rocker-versioned2` repository`](https://github.com/rocker-org/rocker-versioned2).*** 
 
@@ -14,10 +14,9 @@ This is a Dockerfile for Shiny Server on Debian stable.  Dockerfiles building on
 To run a temporary container with Shiny Server:
 
 ```sh
-docker run --rm -p 3838:3838 rocker/shiny
+docker run --rm -p 3838:3838 marcofarena/fieldimager
 ```
 
-To get specific version of R with your shiny image (e.g. 3.4.4):
 
 
 ```sh

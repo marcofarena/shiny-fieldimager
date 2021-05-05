@@ -20,8 +20,7 @@ docker run --rm -p 3838:3838 marcofarena/fieldimager
 To deploy apps stored in the host system:
 
 ```sh
-sudo docker run -d -p 3838:3838 -v /srv/shinyapps/:/srv/shiny-server/ marcoarena/fieldima
-ger
+sudo docker run -d -p 3838:3838 -v /srv/shinyapps/:/srv/shiny-server/ marcoarena/fieldimager
 ```
 
 ### Developer Notes

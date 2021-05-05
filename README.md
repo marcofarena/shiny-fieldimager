@@ -1,4 +1,4 @@
-Docker for Shiny Server
+Docker for FIELDimageR on Shiny Server
 =======================
 
 ![](https://img.shields.io/docker/build/rocker/shiny.svg) ![](https://img.shields.io/docker/build/rocker/shiny-verse.svg)

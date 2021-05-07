@@ -22,6 +22,11 @@ To deploy apps stored in the host system:
 ```sh
 sudo docker run -d -p 3838:3838 -v /srv/shinyapps/:/srv/shiny-server/ marcoarena/fieldimager
 ```
+To mount to Google Cloud Storage with fuse
+
+```sh
+gcsfuse --only-dir bucket-folder bucket-name ~/directory
+```
 
 ### Developer Notes
 

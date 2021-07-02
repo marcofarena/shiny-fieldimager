@@ -51,12 +51,15 @@ RUN install2.r --error \
     git2r \
     usethis \
     fftwtools \
-    devtools
+    devtools \
+    shinydashboard \
+    leaflet
 
 RUN installGithub.r filipematias23/FIELDimageR
 
 EXPOSE 3838
 
-COPY shiny-server.sh /usr/bin/shiny-server.sh
+ADD shiny-server.sh /usr/bin/shiny-server.sh
 
 CMD ["/usr/bin/shiny-server.sh"]
+
